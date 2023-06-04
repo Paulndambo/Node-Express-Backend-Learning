@@ -1,0 +1,44 @@
+[
+    {
+        "name": "GitHub Co-Pilot",
+        "price": 10,
+        "company": "Microsoft",
+        "rating": 5
+    },
+    {
+        "name": "Gitlab",
+        "price": 100,
+        "company": "Apple",
+        "rating": 4.3
+    },
+    {
+        "name": "Self Driving Cars",
+        "price": "45000",
+        "company": "Google",
+        "rating": 3.5
+    },
+    {
+        "name": "Google Pay",
+        "price": 45,
+        "company": "Google",
+        "rating": 5.0
+    },
+    {
+        "name": "Apple Card",
+        "price": 0,
+        "company": "Apple",
+        "rating": 5.0
+    },
+    {
+        "name": "Africa Development Center",
+        "price": 5000000,
+        "company": "Microsoft",
+        "rating": 5.0
+    },
+    {
+        "name": "Play Store",
+        "price": 25,
+        "company": "Google",
+        "rating": 5
+    }
+]
