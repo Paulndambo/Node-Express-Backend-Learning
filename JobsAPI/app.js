@@ -21,6 +21,9 @@ app.get("/", (req, res) => {
     res.send("Jobs API")
 })
 
+app.use("/api/v0/auth/", authRouter)
+app.use("/api/v0/jobs/", jobsRouter)
+
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
