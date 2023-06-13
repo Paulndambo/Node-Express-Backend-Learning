@@ -6,6 +6,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 const notFoundMiddleware = require("./middleware/not-found");
 const errorMiddleware = require("./middleware/error-handler");
+const authenticationMiddleware = require("./middleware/authentication");
 
 const connectDB = require("./db/connect");
 
@@ -17,12 +18,13 @@ const jobsRouter = require("./routes/jobs");
 
 app.use(express.json())
 
+
+//Routes
 app.get("/", (req, res) => {
     res.send("Jobs API")
 })
-
 app.use("/api/v0/auth/", authRouter)
-app.use("/api/v0/jobs/", jobsRouter)
+app.use("/api/v0/jobs/", authenticationMiddleware, jobsRouter)
 
 
 app.use(notFoundMiddleware);
